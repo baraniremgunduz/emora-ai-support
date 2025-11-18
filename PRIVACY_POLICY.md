@@ -1,6 +1,6 @@
 # 🔒 Emora AI - Gizlilik Politikası
 
-**Son Güncelleme:** Ocak 2025
+**Son Güncelleme:** Kasım 2025
 
 Bu Gizlilik Politikası, Emora AI uygulamasının ("Uygulama", "Biz", "Bizim") kullanıcılarının ("Kullanıcı", "Siz", "Sizin") kişisel bilgilerini nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar.
 
@@ -223,7 +223,7 @@ Eğer bu politikayı kabul etmiyorsanız, lütfen uygulamayı kullanmayın.
 ---
 
 **Platform Sağlayıcı:** Emora AI  
-**Son Güncelleme:** Ocak 2025  
+**Son Güncelleme:** Kasım 2025  
 **Versiyon:** 1.0
 
 © 2025 Emora AI. Tüm hakları saklıdır.
