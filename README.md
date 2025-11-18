@@ -78,5 +78,5 @@ Gizlilik politikamız için: [Gizlilik Politikası](https://github.com/baranirem
 
 ## 📄 Lisans
 
-© 2024 Emora AI. Tüm hakları saklıdır.
+© 2025 Emora AI. Tüm hakları saklıdır.
 
