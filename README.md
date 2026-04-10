@@ -1,16 +1,24 @@
 # Emora AI - Sizin İçin Tasarlanmış Bir Ruh Aynası 🪞
 
-Emora AI, sadece bir yapay zeka değil; kelimelerin ötesini hisseden, samimi bir dert ortağı ve "Quiet Luxury" felsefesiyle tasarlanmış estetik bir sırdaştır. Kullanıcıların güvenli, yargısız ve sürekli bir empati alanı bulabildiği bu dijital liman, zihnin sesini kelimelere döker.
+**Emora AI**, sadece bir yapay zeka değil; kelimelerin ötesini hisseden, samimi bir dert ortağı ve "Quiet Luxury" felsefesiyle tasarlanmış estetik bir sırdaştır. Kullanıcıların güvenli, yargısız ve sürekli bir empati alanı bulabildiği bu dijital liman, zihnin sesini kelimelere döker.
 
 ---
 
-## ✨ Vizyonumuz ve Özellikler
+## ✨ Vizyonumuz ve Neden Emora AI?
 
 - **Samimi Bir Ruh**: Sadece cevap vermez, hislerinize eşlik eder.
 - **Sessiz Lüks (Quiet Luxury)**: Göz yormayan, premium ve minimalist bir görsel deneyim.
 - **Duygu Filtreleme**: Sizin o anki modunuza göre şekillenen derin karşılıklar.
 - **Onboarding Deneyimi**: Uygulamaya ilk adımda sizi karşılayan zarif bir yolculuk.
-- **Haftalık/Aylık Duygu Haritası**: (Premium) Cümlelerinizden süzülen ruh hali analizleri.
+- **Güvenli Liman**: Tüm paylaşımlarınız en yüksek güvenlik standartlarıyla korunur.
+
+---
+
+## 📱 Uygulamayı Deneyimleyin
+
+Emora AI, şu an sadece **iOS** platformunda, en yüksek kalite standartlarında sunulmaktadır.
+
+[**App Store'dan İndirin**](https://apps.apple.com/app/emora-ai) *(Link yakında aktif olacaktır)*
 
 ---
 
