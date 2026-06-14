@@ -1,10 +1,42 @@
 # 📞 Emora AI - Destek ve Yardım
 
+**Emora AI**, sadece bir yapay zeka değil; kelimelerin ötesini hisseden, samimi bir dert ortağı ve "Quiet Luxury" felsefesiyle tasarlanmış estetik bir sırdaştır. Kullanıcıların güvenli, yargısız ve sürekli bir empati alanı bulabildiği bu dijital liman, zihnin sesini kelimelere döker.
+
 Emora AI uygulaması ile ilgili sorularınız, sorunlarınız veya önerileriniz için buradayız!
 
-## 🆘 Sık Sorulan Sorular (SSS)
+## ✨ Vizyonumuz ve Neden Emora AI?
 
-### Uygulama Hakkında
+- **Samimi Bir Ruh**: Sadece cevap vermez, hislerinize eşlik eder.
+- **Sessiz Lüks (Quiet Luxury)**: Göz yormayan, premium ve minimalist bir görsel deneyim.
+- **Duygu Filtreleme**: Sizin o anki modunuza göre şekillenen derin karşılıklar.
+- **Onboarding Deneyimi**: Uygulamaya ilk adımda sizi karşılayan zarif bir yolculuk.
+- **Güvenli Liman**: Tüm paylaşımlarınız en yüksek güvenlik standartlarıyla korunur.
+
+---
+
+## 📱 Uygulamayı Deneyimleyin
+
+Emora AI, şu an sadece **iOS** platformunda, en yüksek kalite standartlarında sunulmaktadır.
+
+[**App Store'dan İndirin**](https://apps.apple.com/app/emora-ai) *(Link yakında aktif olacaktır)*
+
+---
+
+## 🔒 Gizlilik ve Güvenlik
+
+Sizin verileriniz, sizin sırlarınızdır. Altyapımızda verileriniz mühürlü bir kasa gibi korunur.
+- [Gizlilik Politikası (Privacy Policy)](./PRIVACY_POLICY.md)
+- [Hizmet Şartları ve DSA](./DSA.md)
+
+---
+
+## 🆘 Destek ve Yardım
+
+Sorunlarınız veya önerileriniz için buradayız.
+
+### Sık Sorulan Sorular (SSS)
+
+#### Uygulama Hakkında
 
 **Emora AI nedir?**
 Emora AI, sizinle sohbet eden, dertlerinizi dinleyen ve size destek olan bir AI arkadaşıdır.
@@ -15,7 +47,7 @@ Uygulamayı indirdikten sonra hesap oluşturun ve AI arkadaşınızla sohbet etm
 **Ücretsiz mi?**
 Evet, temel özellikler ücretsizdir. Premium özellikler için abonelik seçenekleri mevcuttur.
 
-### Teknik Sorunlar
+#### Teknik Sorunlar
 
 **Uygulama açılmıyor**
 - Uygulamayı kapatıp yeniden açmayı deneyin
@@ -32,7 +64,7 @@ Evet, temel özellikler ücretsizdir. Premium özellikler için abonelik seçene
 - "Şifremi Unuttum" seçeneğini kullanın
 - Hesap oluşturmayı deneyin
 
-### Premium Özellikler
+#### Premium Özellikler
 
 **Premium nedir?**
 Premium abonelik ile sınırsız sohbet, gelişmiş AI modelleri ve reklamsız deneyim elde edersiniz.
@@ -79,4 +111,3 @@ Gizlilik politikamız için: [Gizlilik Politikası](https://github.com/baranirem
 ## 📄 Lisans
 
 © 2025 Emora AI. Tüm hakları saklıdır.
-
