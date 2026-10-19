@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emora AI — Gizlilik Politikası / Privacy Policy</title>
+<meta name="description" content="Emora AI gizlilik politikası: hangi verileri topladığımız, yapay zekâ ile nasıl işlendiği, saklama süreleri ve haklarınız. / Emora AI privacy policy.">
+<meta name="robots" content="index,follow">
+<style>
+  :root{
+    --bg:#08070d; --ink:#f1eefc; --muted:#a9a5c4; --faint:#77739a;
+    --glass:rgba(255,255,255,.045); --glass2:rgba(255,255,255,.075); --stroke:rgba(255,255,255,.11);
+    --g1:#7c6cf5; --g2:#c06bf5; --g3:#4fc3f7; --warm:#f2c879;
+    --grad:linear-gradient(135deg,var(--g1),var(--g2));
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);font:16.5px/1.75 var(--sans);-webkit-font-smoothing:antialiased;background:var(--bg);overflow-x:hidden}
+  body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(90px);pointer-events:none}
+  body::before{width:620px;height:620px;left:-180px;top:-160px;background:radial-gradient(circle,rgba(124,108,245,.42),transparent 68%)}
+  body::after{width:560px;height:560px;right:-160px;top:120px;background:radial-gradient(circle,rgba(192,107,245,.30),transparent 68%)}
+  a{color:var(--g2);text-underline-offset:3px}a:hover{text-decoration:underline}
+  ::selection{background:var(--g1);color:#fff}
+  .wrap{position:relative;max-width:1100px;margin:0 auto;padding:0 24px 90px}
+
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:.02em}
+  .brand svg{width:40px;height:40px;padding:9px;border-radius:13px;color:#d9d2ff;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.18);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+  .brand b{font:700 16px/1 var(--sans);letter-spacing:.04em}
+  .lang{display:inline-flex;padding:4px;border-radius:999px;background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .lang button{border:0;background:none;color:var(--muted);cursor:pointer;padding:8px 16px;border-radius:999px;font:600 12.5px/1 var(--sans);letter-spacing:.12em;transition:.2s}
+  .lang button[aria-pressed="true"]{background:var(--grad);color:#fff}
+  .lang i{display:none}
+  @media (pointer:coarse),(max-width:760px){.lang button{padding:12px 20px;font-size:13px}}
+
+  .hero{position:relative;text-align:center;padding:64px 0 46px;overflow:hidden}
+  .hero .mark{position:absolute;left:50%;top:-10px;transform:translateX(-50%);width:640px;max-width:150%;color:var(--g1);opacity:.065;pointer-events:none}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 24px;padding:7px 16px;border-radius:999px;background:var(--glass);border:1px solid var(--stroke);font:600 11.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--grad);}
+  .hero h1{position:relative;font:400 clamp(40px,7.4vw,78px)/1.05 var(--serif);letter-spacing:-.03em;margin:0 auto 22px;max-width:15ch}
+  .hero h1 em{font-style:italic;background:linear-gradient(120deg,var(--g3),var(--g1) 45%,var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding-right:.06em}
+  .lede{position:relative;font:400 clamp(18px,2.2vw,21px)/1.6 var(--serif);color:var(--muted);max-width:46ch;margin:0 auto 28px}
+  .meta{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+  .meta span{padding:8px 15px;border-radius:999px;background:var(--glass);border:1px solid var(--stroke);font:500 12.5px/1 var(--sans);letter-spacing:.04em;color:var(--muted)}
+
+  .glance{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:8px 0 0}
+  .fact{position:relative;padding:24px 22px;border-radius:22px;background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .25s,border-color .25s,background .25s;overflow:hidden}
+  .fact::after{content:"";position:absolute;inset:0;background:radial-gradient(240px 120px at 0% 0%,rgba(124,108,245,.20),transparent 70%);opacity:.8;pointer-events:none}
+  .fact:hover{transform:translateY(-4px);border-color:rgba(192,107,245,.5);background:var(--glass2)}
+  .fact svg{position:relative;width:46px;height:46px;padding:11px;border-radius:15px;color:#d9d2ff;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.18);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);margin-bottom:16px;display:block}
+  .fact b{position:relative;display:block;font:500 19px/1.25 var(--serif);margin-bottom:7px}
+  .fact span{position:relative;display:block;color:var(--muted);font-size:14.5px;line-height:1.55}
+
+  .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;margin-top:44px;align-items:start}
+  main,nav.toc{min-width:0}
+  nav.toc{position:sticky;top:20px;padding:20px 14px;border-radius:22px;background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-size:14px}
+  nav.toc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font:700 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin:2px 10px 14px;padding:4px 0}
+  nav.toc summary::-webkit-details-marker{display:none}
+  nav.toc summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s;opacity:.0}
+  nav.toc details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+  nav.toc ol{list-style:none;margin:0;padding:0;counter-reset:t}
+  nav.toc li{counter-increment:t}
+  nav.toc a{display:flex;gap:10px;align-items:baseline;padding:8px 10px;border-radius:12px;color:var(--muted);text-decoration:none;line-height:1.35;transition:.2s}
+  nav.toc a::before{content:counter(t,decimal-leading-zero);font-variant-numeric:tabular-nums;font-size:11.5px;color:var(--faint)}
+  nav.toc a:hover{color:var(--ink);background:var(--glass2)}
+  nav.toc a.on{color:#fff;background:var(--grad)}
+  nav.toc a.on::before{color:rgba(255,255,255,.75)}
+
+  main{counter-reset:sec}
+  main section{counter-increment:sec;position:relative;padding:30px 32px 26px;margin:0 0 18px;border-radius:26px;background:var(--glass);border:1px solid var(--stroke);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);scroll-margin-top:16px;overflow:hidden}
+  main section::after{content:"";position:absolute;inset:0 0 auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(192,107,245,.7),transparent);opacity:.7}
+  main h2{display:flex;align-items:center;gap:14px;font:400 clamp(24px,3vw,31px)/1.2 var(--serif);letter-spacing:-.015em;margin:0 0 16px}
+  main h2::before{content:counter(sec,decimal-leading-zero);flex:none;display:grid;place-items:center;min-width:44px;height:44px;border-radius:14px;color:#d9d2ff;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.18);font:italic 400 20px/1 var(--serif)}
+  main p{margin:11px 0}
+  main ul{margin:11px 0;padding:0;list-style:none}
+  main li{position:relative;padding-left:26px;margin:10px 0}
+  main li::before{content:"";position:absolute;left:3px;top:.72em;width:9px;height:9px;border-radius:50%;background:var(--grad)}
+  main strong{font-weight:600}
+  main em{font-style:italic}
+  .note{position:relative;margin:18px 0;padding:16px 18px 16px 62px;border-radius:18px;background:linear-gradient(135deg,rgba(242,200,121,.13),rgba(242,200,121,.04));border:1px solid rgba(242,200,121,.32);font-size:15.5px;line-height:1.65}
+  .note::before{content:"i";position:absolute;left:18px;top:16px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--warm);color:#1b1408;font:italic 700 15px/1 var(--serif)}
+
+  .tablewrap{overflow-x:auto;margin:14px -4px;border-radius:18px;border:1px solid var(--stroke);background:rgba(255,255,255,.025)}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:440px}
+  th{text-align:left;padding:14px 18px;font:700 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--faint);background:var(--glass)}
+  td{padding:14px 18px;border-top:1px solid var(--stroke);vertical-align:top;color:var(--muted)}
+  tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+  td:first-child{font:500 16px/1.3 var(--serif);color:var(--ink);white-space:nowrap}
+  td:last-child{color:var(--ink)}
+
+  footer{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:space-between;align-items:center;margin-top:34px;padding:20px 26px;border-radius:20px;background:var(--glass);border:1px solid var(--stroke);color:var(--muted);font-size:14px}
+  footer .f{display:flex;align-items:center;gap:10px}
+  footer .f svg{width:26px;height:26px;padding:5px;border-radius:9px;background:var(--grad);color:#fff}
+  footer nav{display:flex;gap:22px}footer a{color:var(--muted)}footer a:hover{color:var(--ink)}
+
+  html[data-lang="tr"] .en{display:none !important}
+  html[data-lang="en"] .tr{display:none !important}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.fact,nav.toc a{transition:none}}
+
+  @media (max-width:940px){
+    .glance{grid-template-columns:1fr 1fr}
+    .layout{grid-template-columns:minmax(0,1fr)}
+    nav.toc{position:static;padding:14px 12px}
+    nav.toc summary{margin:0 6px;padding:10px 0;font-size:12px}
+    nav.toc summary::after{opacity:.8}
+    nav.toc details[open] summary{margin-bottom:8px}
+    nav.toc ol{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px}
+    nav.toc a{padding:11px 10px}
+  }
+  @media (max-width:760px){
+    .tablewrap{margin:12px 0;border:0;background:none;overflow:visible}
+    table,tbody,tr,td{display:block;min-width:0;width:100%}
+    tr:has(th){display:none}
+    tr{margin:0 0 12px;border:1px solid var(--stroke);border-radius:16px;background:var(--glass);overflow:hidden}
+    tr:nth-child(even) td{background:none}
+    td{border-top:0;padding:10px 16px}
+    td:first-child{white-space:normal;font-size:17px;padding-top:14px;padding-bottom:2px}
+    td:not(:first-child)::before{content:attr(data-label);display:block;font:700 10.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:4px}
+    td:last-child{padding-bottom:14px}
+  }
+  @media (max-width:620px){
+    .wrap{padding:0 16px 70px}
+    .hero{padding:44px 0 34px}
+    .glance{grid-template-columns:minmax(0,1fr)}
+    main section{padding:24px 20px 20px;border-radius:22px}
+    main h2::before{min-width:38px;height:38px;font-size:17px;border-radius:12px}
+    nav.toc ol{grid-template-columns:minmax(0,1fr)}
+  }
+  @media print{
+    body{background:#fff;color:#000}body::before,body::after,.hero .mark,nav.toc,.lang{display:none}
+    main section,.fact,footer{background:#fff;border:1px solid #ccc;backdrop-filter:none}a{color:#000}.reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <a class="brand" href="./" aria-label="Emora AI"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 10c-9.4 0-17 6.7-17 15 0 4.6 2.3 8.7 6 11.5L13 47l9.4-4.6c1.1.2 2.3.3 3.6.3 9.4 0 17-6.7 17-15s-7.6-17.7-17-17.7Z"/><path d="M46 24.6c7 .9 12 6 12 12.4 0 3.6-1.7 6.8-4.5 9L55 55l-7.5-3.7c-.9.2-1.8.3-2.8.3-4.4 0-8.3-1.8-10.7-4.6"/></svg><b>Emora AI</b></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="btn-tr" aria-pressed="true" type="button">TR</button><i></i><button id="btn-en" aria-pressed="false" type="button">EN</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <svg class="mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 10c-9.4 0-17 6.7-17 15 0 4.6 2.3 8.7 6 11.5L13 47l9.4-4.6c1.1.2 2.3.3 3.6.3 9.4 0 17-6.7 17-15s-7.6-17.7-17-17.7Z"/><path d="M46 24.6c7 .9 12 6 12 12.4 0 3.6-1.7 6.8-4.5 9L55 55l-7.5-3.7c-.9.2-1.8.3-2.8.3-4.4 0-8.3-1.8-10.7-4.6"/></svg>
+    <p class="eyebrow"><span class="tr">Gizlilik · Güven</span><span class="en">Privacy · Trust</span></p>
+    <h1><span class="tr">Gizliliğinize <em>özen</em> gösteriyoruz.</span><span class="en">We take your privacy <em>seriously</em>.</span></h1>
+    <p class="lede tr">Emora AI'yı rahatça kullanabilmeniz için bilgilerinizin nasıl ele alındığını açık ve sade bir dille anlatıyoruz.</p>
+    <p class="lede en">So you can enjoy Emora AI with confidence, here is a clear and simple explanation of how your information is handled.</p>
+    <p class="meta"><span class="tr">Gizlilik Politikası</span><span class="en">Privacy Policy</span><span class="tr">Son güncelleme 19 Ekim 2026</span><span class="en">Last updated 19 October 2026</span><span class="tr">Sürüm 1.1.4 ve sonrası</span><span class="en">App version 1.1.4 and later</span></p>
+  </div>
+
+  <div class="glance">
+    <div class="fact"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M8.5 23.5l15-15"/></svg><b class="tr">Verileriniz satılmaz</b><b class="en">Your data is not sold</b><span class="tr">Kişisel verilerinizi üçüncü kişilere satmayız.</span><span class="en">We do not sell your personal data to third parties.</span></div>
+    <div class="fact"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M16 4l2.6 7.4L26 14l-7.4 2.6L16 24l-2.6-7.4L6 14l7.4-2.6L16 4Z"/><path d="M25 22l.9 2.1L28 25l-2.1.9L25 28l-.9-2.1L22 25l2.1-.9L25 22Z"/></svg><b class="tr">Yapay zekâ destekli sohbet</b><b class="en">AI-powered conversations</b><span class="tr">Cevaplar, güvenilir bir yapay zekâ hizmet sağlayıcısıyla hazırlanır. Bölüm 04.</span><span class="en">Replies are prepared with a trusted AI service provider. Section 04.</span></div>
+    <div class="fact"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4.5l9 3.5v7c0 5.6-3.7 9.9-9 12-5.3-2.1-9-6.4-9-12V8l9-3.5Z"/><path d="M12 15.5l3 3 5-6"/></svg><b class="tr">Kontrol sizde</b><b class="en">You are in control</b><span class="tr">Hesabınızı dilediğiniz zaman uygulamadan silebilirsiniz. Bölüm 08.</span><span class="en">You can delete your account in the app whenever you wish. Section 08.</span></div>
+    <div class="fact"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 27C8 21.5 5 17.4 5 13.6 5 10.5 7.4 8 10.4 8c2.1 0 4.1 1.1 5.6 3.2C17.5 9.1 19.5 8 21.6 8 24.6 8 27 10.5 27 13.6c0 3.8-3 7.9-11 13.4Z"/></svg><b class="tr">Bir sohbet arkadaşı</b><b class="en">A companion to talk to</b><span class="tr">Emora AI sohbet içindir; profesyonel destek yerine geçmez. Bölüm 11.</span><span class="en">Emora AI is for conversation; it does not replace professional support. Section 11.</span></div>
+  </div>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Contents" id="toc">
+      <details id="tocd" open><summary><span class="tr">İçindekiler</span><span class="en">Contents</span></summary>
+      <ol>
+        <li><a href="#s1"><span class="tr">Biz kimiz</span><span class="en">Who we are</span></a></li>
+        <li><a href="#s2"><span class="tr">Hangi bilgileri alıyoruz</span><span class="en">Information we receive</span></a></li>
+        <li><a href="#s3"><span class="tr">Neden kullanıyoruz</span><span class="en">How and why we use it</span></a></li>
+        <li><a href="#s4"><span class="tr">Yapay zekâ ile sohbet</span><span class="en">Chatting with AI</span></a></li>
+        <li><a href="#s5"><span class="tr">Kimlerle paylaşıyoruz</span><span class="en">Who we share it with</span></a></li>
+        <li><a href="#s6"><span class="tr">Reklamlar ve izinleriniz</span><span class="en">Ads and your choices</span></a></li>
+        <li><a href="#s7"><span class="tr">Bilgilerinizi nasıl koruyoruz</span><span class="en">How we protect your information</span></a></li>
+        <li><a href="#s8"><span class="tr">Saklama ve hesabı silme</span><span class="en">Retention and deleting your account</span></a></li>
+        <li><a href="#s9"><span class="tr">Haklarınız</span><span class="en">Your rights</span></a></li>
+        <li><a href="#s10"><span class="tr">Gençler için</span><span class="en">Young users</span></a></li>
+        <li><a href="#s11"><span class="tr">Emora AI'ın niteliği</span><span class="en">What Emora AI is</span></a></li>
+        <li><a href="#s12"><span class="tr">Sorumluluğun kapsamı</span><span class="en">Scope of responsibility</span></a></li>
+        <li><a href="#s13"><span class="tr">Uluslararası aktarım</span><span class="en">International transfers</span></a></li>
+        <li><a href="#s14"><span class="tr">Güncellemeler ve iletişim</span><span class="en">Updates and contact</span></a></li>
+      </ol>
+      </details>
+    </nav>
+
+    <main>
+      <section id="s1">
+        <h2><span class="tr">Biz kimiz</span><span class="en">Who we are</span></h2>
+        <p class="tr">Emora AI, iOS için geliştirilmiş, yapay zekâ destekli bir sohbet ve arkadaşlık uygulamasıdır. Emora AI ekibi olarak bilgilerinizi özenle korumak için buradayız; sorularınız için <strong>emoraaiapp@gmail.com</strong> adresinden bize ulaşabilirsiniz. Bu politika, uygulama ve ilgili hizmetler için geçerlidir. Uygulamayı kullanarak bu politikayı okuduğunuzu ve anladığınızı kabul etmiş olursunuz.</p>
+        <p class="en">Emora AI is an AI-powered chat and companionship app for iOS. We, the Emora AI team, are here to look after your information with care; you can reach us any time at <strong>emoraaiapp@gmail.com</strong>. This policy applies to the app and related services. By using the app, you confirm that you have read and understood this policy.</p>
+      </section>
+
+      <section id="s2">
+        <h2><span class="tr">Hangi bilgileri alıyoruz</span><span class="en">Information we receive</span></h2>
+        <p class="tr">Hizmeti size sunabilmek için ihtiyaç duyduğumuz bilgiler şunlardır:</p>
+        <p class="en">These are the details we need in order to provide the service to you:</p>
+        <div class="tablewrap">
+          <table class="tr">
+            <tr><th>Bilgi</th><th>Ayrıntı</th><th>Amaç</th></tr>
+            <tr><td>Hesap</td><td>E-posta, ad, giriş yöntemi (e-posta/parola, Apple veya Google) ve isteğe bağlı profil fotoğrafı. Parolanız tarafımızca düz metin olarak görülmez veya saklanmaz.</td><td>Hesap oluşturma ve giriş</td></tr>
+            <tr><td>Sohbetler</td><td>Yazdığınız mesajlar, yapay zekâ cevapları ve sohbet oturumları.</td><td>Hizmeti sunmak ve geçmişinizi göstermek</td></tr>
+            <tr><td>Yaş bilgisi</td><td>Doğum yılı veya yaş grubu (paylaştıysanız).</td><td>Cevapları yaşınıza uygun tutmak</td></tr>
+            <tr><td>Ruh hâli özeti</td><td>Profil ekranındaki duygu özeti, sohbetlerinizden cihazınızda hesaplanır; sunucuda ayrıca saklanmaz.</td><td>Profil ekranındaki istatistikler</td></tr>
+            <tr><td>Kullanım</td><td>Günlük mesaj sayacı, oturum sayısı, uygulama içi olaylar ve hata kayıtları.</td><td>Mesaj limitini uygulamak, hataları gidermek, hizmeti geliştirmek</td></tr>
+            <tr><td>Abonelik</td><td>Ürün, durum ve bitiş tarihi. Ödeme bilgileriniz bize ulaşmaz; ödemeyi Apple işler.</td><td>Premium özellikleri açmak</td></tr>
+            <tr><td>Bildirimler</td><td>Bildirim izni verdiyseniz cihaz bildirim belirteci. Planlı hatırlatmalar cihazınızda oluşturulur ve adınızı ya da son sohbetlerinizden kısa konu ipuçlarını içerebilir.</td><td>Size bildirim göndermek</td></tr>
+            <tr><td>Platform ve dil</td><td>Uygulamanın çalıştığı platform (iOS), dil ve bölge.</td><td>Doğru dil ve para birimi</td></tr>
+            <tr><td>Reklam kimliği</td><td>Yalnızca "İzleme" iznini verirseniz.</td><td>Kişiselleştirilmiş reklamlar (Bölüm 6)</td></tr>
+          </table>
+          <table class="en">
+            <tr><th>Information</th><th>Details</th><th>Purpose</th></tr>
+            <tr><td>Account</td><td>Email, name, sign-in method (email/password, Apple or Google) and an optional profile photo. We never see or store your password in plain text.</td><td>Account creation and sign-in</td></tr>
+            <tr><td>Conversations</td><td>The messages you write, AI replies and chat sessions.</td><td>Provide the service and show your history</td></tr>
+            <tr><td>Age information</td><td>Birth year or age group (if you shared it).</td><td>Keep replies suitable for your age</td></tr>
+            <tr><td>Mood summary</td><td>The emotion summary on your profile screen is calculated on your device from your chats and is not stored separately on our servers.</td><td>Statistics on your profile screen</td></tr>
+            <tr><td>Usage</td><td>Daily message counter, session count, in-app events and error logs.</td><td>Apply message limits, fix issues, improve the service</td></tr>
+            <tr><td>Subscription</td><td>Product, status and expiry date. Your payment details never reach us; Apple handles payment.</td><td>Unlock Premium features</td></tr>
+            <tr><td>Notifications</td><td>A device notification token if you allow notifications. Scheduled reminders are created on your device and may include your name or short topic hints from your recent chats.</td><td>Send you notifications</td></tr>
+            <tr><td>Platform and language</td><td>The platform the app runs on (iOS), language and region.</td><td>Correct language and currency</td></tr>
+            <tr><td>Advertising ID</td><td>Only if you allow "Tracking".</td><td>Personalized ads (Section 6)</td></tr>
+          </table>
+        </div>
+        <p class="tr">İhtiyacımız olmayan bilgileri istemeyiz: rehber, konum, mikrofon veya Face ID kullanmayız. Kamera ve fotoğraflarınıza yalnızca siz profil fotoğrafı eklemek ya da görsel paylaşmak istediğinizde, izninizle erişilir.</p>
+        <p class="en">We do not ask for what we do not need: we do not use your contacts, location, microphone or Face ID. Your camera and photos are accessed only when you choose to add a profile photo or share an image, with your permission.</p>
+      </section>
+
+      <section id="s3">
+        <h2><span class="tr">Neden kullanıyoruz</span><span class="en">How and why we use it</span></h2>
+        <ul class="tr">
+          <li><strong>Hizmeti sunmak</strong> (sohbet, geçmiş, premium özellikler): sözleşmenin kurulması ve ifası.</li>
+          <li><strong>Güvenliği sağlamak, kötüye kullanımı önlemek, mesaj limitini uygulamak:</strong> meşru menfaatlerimiz.</li>
+          <li><strong>Hizmeti geliştirmek ve hataları gidermek:</strong> meşru menfaatlerimiz.</li>
+          <li><strong>Kişiselleştirilmiş reklamlar ve bildirimler:</strong> verdiğiniz izin. İzninizi iOS ayarlarından istediğiniz zaman geri alabilirsiniz.</li>
+          <li><strong>Yasal yükümlülüklerimizi yerine getirmek:</strong> mevzuattan doğan yükümlülükler.</li>
+        </ul>
+        <ul class="en">
+          <li><strong>Providing the service</strong> (chat, history, premium features): to enter into and perform our agreement with you.</li>
+          <li><strong>Keeping things secure, preventing misuse, applying message limits:</strong> our legitimate interests.</li>
+          <li><strong>Improving the service and fixing issues:</strong> our legitimate interests.</li>
+          <li><strong>Personalized ads and notifications:</strong> the permission you give. You can withdraw it any time in iOS settings.</li>
+          <li><strong>Meeting our legal obligations:</strong> requirements under applicable law.</li>
+        </ul>
+        <p class="tr">Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu'na ve AB/Birleşik Krallık kullanıcıları için GDPR'a uygun olarak hazırlanmıştır.</p>
+        <p class="en">This policy is prepared in line with Turkish Personal Data Protection Law No. 6698 and, for EU/UK users, the GDPR.</p>
+      </section>
+
+      <section id="s4">
+        <h2><span class="tr">Yapay zekâ ile sohbet</span><span class="en">Chatting with AI</span></h2>
+        <p class="tr">Emora AI'ın cevapları, üçüncü taraf bir yapay zekâ sağlayıcısı (OpenAI) aracılığıyla hazırlanır. Bir mesaj gönderdiğinizde, cevap oluşturulabilmesi için mesajınız, oturumdaki yakın geçmiş, tercih ettiğiniz ad ve yaş grubu bilgisi sunucularımız üzerinden bu sağlayıcıya iletilir.</p>
+        <p class="en">Emora AI's replies are prepared through a third-party AI provider (OpenAI). When you send a message, it, together with recent history from that session, your preferred name and age group, is sent through our servers to this provider so that a reply can be created.</p>
+        <ul class="tr">
+          <li>Sohbetlerinizi yapay zekâ modellerini <strong class="hl">eğitmek için kullanmayız</strong>. Sağlayıcı tarafındaki işleme, sağlayıcının kendi veri politikasına tabidir.</li>
+          <li>Hizmeti kullanarak mesajlarınızın bu şekilde işlenmesini kabul etmiş olursunuz.</li>
+          <li>Yapay zekâ, her teknoloji gibi zaman zaman hatalı veya eksik cevaplar verebilir. Cevaplar sohbet ve bilgilendirme amaçlıdır; tıbbi, hukuki, mali veya profesyonel tavsiye niteliği taşımaz. Önemli kararlarınızda ilgili alanın uzmanına danışmanızı öneririz.</li>
+          <li>Sohbette paylaşacaklarınızı siz belirlersiniz. Kimlik numarası, parola veya kart bilgisi gibi bilgileri yazmamanız en iyisidir.</li>
+        </ul>
+        <ul class="en">
+          <li>We <strong class="hl">do not use your chats to train AI models</strong>. Processing on the provider's side is governed by that provider's own data policy.</li>
+          <li>By using the service, you agree to your messages being processed in this way.</li>
+          <li>Like any technology, AI can occasionally give inaccurate or incomplete replies. Replies are for conversation and general information; they are not medical, legal, financial or professional advice. For important decisions, we encourage you to consult a qualified professional.</li>
+          <li>You decide what to share in a chat. It is best not to type things like ID numbers, passwords or card details.</li>
+        </ul>
+      </section>
+
+      <section id="s5">
+        <h2><span class="tr">Kimlerle paylaşıyoruz</span><span class="en">Who we share it with</span></h2>
+        <p class="tr">Bilgilerinizi <strong class="hl">satmayız</strong>. Yalnızca hizmeti sunmak için gereken sağlayıcılarla, görevleriyle sınırlı olarak paylaşırız:</p>
+        <p class="en">We <strong class="hl">do not sell</strong> your information. We share it only with providers needed to run the service, limited to their role:</p>
+        <ul>
+          <li><span class="tr">Veritabanı, kimlik doğrulama ve sunucu işlevleri için <em>bulut altyapı sağlayıcıları</em>.</span><span class="en"><em>Cloud infrastructure providers</em> for the database, authentication and server functions.</span></li>
+          <li><span class="tr">Cevapları hazırlayan <em>üçüncü taraf yapay zekâ sağlayıcısı</em> (Bölüm 4).</span><span class="en">The <em>third-party AI provider</em> that prepares replies (Section 4).</span></li>
+          <li><span class="tr">Apple: Apple ile giriş, abonelik ve ödeme işleme, bildirim iletimi.</span><span class="en">Apple: Sign in with Apple, subscriptions and payments, notification delivery.</span></li>
+          <li><span class="tr">Google: Google ile giriş ve reklam hizmetleri.</span><span class="en">Google: Google Sign-In and advertising services.</span></li>
+          <li><span class="tr">Uygulama güncellemelerinin dağıtımı ve bildirim altyapısı sağlayıcıları.</span><span class="en">Providers of app-update delivery and notification infrastructure.</span></li>
+        </ul>
+        <p class="tr">Ayrıca yasal bir yükümlülük, yetkili bir makamın talebi veya haklarımızın ve kullanıcılarımızın güvenliğinin korunması gerektiğinde, mevzuatın izin verdiği ölçüde ilgili makamlarla paylaşım yapılabilir.</p>
+        <p class="en">Where required by law, requested by a competent authority, or necessary to protect our rights and the safety of our users, information may also be shared with the relevant authorities to the extent the law allows.</p>
+      </section>
+
+      <section id="s6">
+        <h2><span class="tr">Reklamlar ve izinleriniz</span><span class="en">Ads and your choices</span></h2>
+        <p class="tr">Ücretsiz kullanımda <strong>Google</strong> reklamları gösterilebilir. iOS'ta uygulama sizden "İzleme" izni ister: <strong>izin verirseniz</strong> reklamlar ilgi alanlarınıza göre kişiselleştirilebilir; <strong>vermezseniz</strong> reklamlar yine görünür, ancak kişiselleştirilmez. AB ve Birleşik Krallık'ta Google'ın ayrı bir onay formu da gösterilebilir. Tercihinizi iOS <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em> bölümünden dilediğiniz zaman değiştirebilirsiniz.</p>
+        <p class="en">Free use may show <strong>Google</strong> ads. On iOS the app asks for "Tracking" permission: <strong>if you allow</strong> it, ads can be tailored to your interests; <strong>if you decline</strong>, you will still see ads, but they will not be personalized. In the EU and UK, a separate Google consent form may also appear. You can change your choice any time in iOS <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+      </section>
+
+      <section id="s7">
+        <h2><span class="tr">Bilgilerinizi nasıl koruyoruz</span><span class="en">How we protect your information</span></h2>
+        <p class="tr">Bilgilerinizi korumak için makul teknik ve idari önlemler alıyoruz:</p>
+        <p class="en">We take reasonable technical and organizational measures to protect your information:</p>
+        <ul class="tr">
+          <li>Bağlantılar HTTPS ile korunur.</li>
+          <li>Sohbet mesajlarının içeriği, cihazınızda tutulan bir anahtarla (iOS Anahtar Zinciri) şifrelenerek saklanır.</li>
+          <li>Veritabanı erişimi, kullanıcı bazlı yetkilendirme kuralları ve sınırlı sunucu yetkileriyle denetlenir.</li>
+        </ul>
+        <ul class="en">
+          <li>Connections are protected with HTTPS.</li>
+          <li>Chat message content is stored encrypted with a key kept on your device (iOS Keychain).</li>
+          <li>Database access is controlled through per-user authorization rules and limited server privileges.</li>
+        </ul>
+        <p class="tr">Güvenlik çalışmalarımızı sürekli geliştiriyoruz. Bununla birlikte internet üzerinden hiçbir iletim veya saklama yönteminin tamamen kusursuz olduğu garanti edilemez. Bir sorunla karşılaşırsanız bize yazmanız yeterlidir.</p>
+        <p class="en">We keep improving our security work. As with any service, no method of transmission or storage over the internet can be guaranteed to be entirely flawless. If you ever notice an issue, simply write to us.</p>
+        <p class="tr"><strong>Cihaz değiştirirken:</strong> Anahtar cihazınızda saklandığı için, yedekten geri yüklediğinizde mesajlarınız genellikle sizinle birlikte taşınır. Uygulamayı yedeksiz, sıfırdan kurarsanız eski mesajlara erişilemeyebilir; yeni mesajlarınız ise sorunsuz çalışır.</p>
+        <p class="en"><strong>When changing devices:</strong> Because the key is kept on your device, your messages normally come along when you restore from a backup. If you set up the app fresh without a backup, older messages may not be accessible; new messages will work normally.</p>
+      </section>
+
+      <section id="s8">
+        <h2><span class="tr">Saklama ve hesabı silme</span><span class="en">Retention and deleting your account</span></h2>
+        <p class="tr">Bilgilerinizi hesabınız açık olduğu sürece saklarız. <strong class="hl">Hesabınızı dilediğiniz zaman uygulamadan silebilirsiniz:</strong> <em>Profil → Profil Düzenle → Hesabı Sil</em>. Silme işlemiyle hesabınız ve ilişkili sohbet, profil, kullanım ve abonelik kayıtlarınız etkin veritabanımızdan kaldırılır; yedeklerimizden de en geç <strong>30 gün</strong> içinde silinir. Yasal bir saklama yükümlülüğü varsa yalnızca ilgili kayıtlar, süresi boyunca saklanır.</p>
+        <p class="en">We keep your information while your account is open. <strong class="hl">You can delete your account in the app whenever you wish:</strong> <em>Profile → Edit Profile → Delete Account</em>. Deletion removes your account and the associated chat, profile, usage and subscription records from our active database; they are also removed from our backups within <strong>30 days</strong>. If a legal retention obligation applies, only the relevant records are kept, for as long as required.</p>
+        <div class="note tr"><strong>Aboneliğiniz hakkında:</strong> Hesabı silmek, Apple üzerinden başlattığınız aboneliği kendiliğinden sonlandırmaz. Ücretlendirmeyi durdurmak için aboneliğinizi iOS <em>Ayarlar → Apple Kimliği → Abonelikler</em> bölümünden yönetebilirsiniz. Apple ile giriş yaptıysanız, silme sırasında Apple bağlantısının kaldırılması için onayınız istenir; dilerseniz bağlantıyı daha sonra iOS <em>Ayarlar → Apple Kimliği → Apple ile Giriş</em> bölümünden de kaldırabilirsiniz.</div>
+        <div class="note en"><strong>About your subscription:</strong> Deleting your account does not automatically end a subscription started through Apple. To stop billing, you can manage it in iOS <em>Settings → Apple ID → Subscriptions</em>. If you signed in with Apple, you are asked to confirm removing the Apple connection during deletion; you can also remove it later in iOS <em>Settings → Apple ID → Sign in with Apple</em>.</div>
+      </section>
+
+      <section id="s9">
+        <h2><span class="tr">Haklarınız</span><span class="en">Your rights</span></h2>
+        <ul class="tr">
+          <li>Bilgilerinize <strong>erişme</strong> ve bir kopyasını isteme (uygulamada <em>Ayarlar → Verileri Dışa Aktar</em>).</li>
+          <li>Yanlış bilgileri <strong>düzeltme</strong> (Profil Düzenle).</li>
+          <li>Bilgilerinizi <strong>sildirme</strong> (Bölüm 8).</li>
+          <li>İşlemeye <strong>itiraz etme</strong>, bilgilerinizin <strong>taşınmasını</strong> isteme ve verdiğiniz izni <strong>geri çekme</strong>.</li>
+          <li>Yetkili kuruma başvurma: Türkiye'de Kişisel Verileri Koruma Kurumu; AB/Birleşik Krallık'ta bulunduğunuz ülkenin veri koruma otoritesi.</li>
+        </ul>
+        <ul class="en">
+          <li><strong>Access</strong> your information and request a copy (in the app: <em>Settings → Export Data</em>).</li>
+          <li><strong>Correct</strong> inaccurate information (Edit Profile).</li>
+          <li><strong>Have your information deleted</strong> (Section 8).</li>
+          <li><strong>Object</strong> to processing, request <strong>portability</strong> and <strong>withdraw</strong> any permission you gave.</li>
+          <li>Contact the competent authority: in Türkiye the Personal Data Protection Authority; in the EU/UK the data protection authority of your country.</li>
+        </ul>
+        <p class="tr">Uygulamadan yapamadığınız talepler için Bölüm 14'teki adrese yazabilirsiniz; en geç 30 gün içinde yanıt vermeye çalışırız.</p>
+        <p class="en">For requests you cannot make in the app, write to the address in Section 14; we aim to reply within 30 days.</p>
+      </section>
+
+      <section id="s10">
+        <h2><span class="tr">Gençler için</span><span class="en">Young users</span></h2>
+        <p class="tr">Emora AI <strong class="hl">13 yaş ve üzeri</strong> kullanıcılar için tasarlanmıştır; 13 yaşın altındaki çocuklardan bilerek bilgi toplamayız. 13–18 yaş arasındaki kullanıcıların uygulamayı ebeveyn veya vasilerinin bilgisi ve izniyle kullanması gerekir. Bir çocuğa ait bilgi topladığımızı düşünüyorsanız bize yazın, ilgili hesabı silelim.</p>
+        <p class="en">Emora AI is designed for users <strong class="hl">aged 13 and over</strong>; we do not knowingly collect information from children under 13. Users aged 13–18 must use the app with the knowledge and permission of a parent or guardian. If you believe we have collected a child's information, please write to us and we will delete the account.</p>
+      </section>
+
+      <section id="s11">
+        <h2><span class="tr">Emora AI'ın niteliği</span><span class="en">What Emora AI is</span></h2>
+        <p class="tr">Emora AI bir <strong>sohbet ve arkadaşlık uygulamasıdır</strong>. Psikolojik destek, terapi, tanı veya tedavi hizmeti sunmaz ve bir uzmanın yerini tutmaz. Sohbetlerinizde paylaştığınız duygusal ya da kişisel konular, bu politikada anlatıldığı şekilde ele alınır.</p>
+        <p class="en">Emora AI is a <strong>chat and companionship app</strong>. It does not provide psychological support, therapy, diagnosis or treatment and does not replace a professional. Emotional or personal topics you share in your chats are handled as described in this policy.</p>
+        <div class="note tr">Zor bir dönemden geçiyorsanız, güvendiğiniz biriyle ya da bir uzmanla konuşmak iyi gelebilir. Acil bir durumda lütfen yerel acil hizmetleri arayın (Türkiye'de <strong>112</strong>).</div>
+        <div class="note en">If you are going through a difficult time, talking with someone you trust or a professional can help. In an emergency, please contact your local emergency services (in Türkiye: <strong>112</strong>).</div>
+      </section>
+
+      <section id="s12">
+        <h2><span class="tr">Sorumluluğun kapsamı</span><span class="en">Scope of responsibility</span></h2>
+        <p class="tr">Hizmeti özenle sunmaya çalışırız; ancak hizmetin kesintisiz veya hatasız olacağını, yapay zekâ cevaplarının her zaman doğru ya da uygun olacağını taahhüt edemeyiz. Hizmet, "mevcut hâliyle" sunulur. Yürürlükteki mevzuatın izin verdiği ölçüde; hizmetin kullanımından, kesintilerden ya da yapay zekâ cevaplarına dayanılmasından doğabilecek dolaylı veya sonuç niteliğindeki zararlardan sorumlu tutulamayız. Mevzuattan doğan, sözleşmeyle değiştirilemeyen tüketici haklarınız saklıdır. Kullanım koşullarımız ayrıca geçerlidir.</p>
+        <p class="en">We work to provide the service with care, but we cannot promise that it will be uninterrupted or error-free, or that AI replies will always be accurate or suitable. The service is provided "as is". To the extent permitted by applicable law, we cannot be held liable for indirect or consequential damages arising from use of the service, interruptions, or reliance on AI replies. Your mandatory consumer rights under the law that cannot be waived by agreement remain unaffected. Our terms of use apply in addition.</p>
+        <p class="tr">Hesabınızın ve cihazınızın güvenliği (parola gizliliği, cihaz kilidi vb.) ile hesabınız üzerinden yapılan paylaşımlar sizin sorumluluğunuzdadır. Hizmetin hukuka, genel ahlaka ve diğer kullanıcıların haklarına uygun kullanılmasını bekleriz.</p>
+        <p class="en">You are responsible for the security of your account and device (keeping your password private, using a device lock, etc.) and for what is shared through your account. We expect the service to be used lawfully and with respect for the rights of others.</p>
+      </section>
+
+      <section id="s13">
+        <h2><span class="tr">Uluslararası aktarım</span><span class="en">International transfers</span></h2>
+        <p class="tr">Hizmet sağlayıcılarımız (bulut altyapısı, yapay zekâ, Apple, Google gibi) bilgileri Türkiye dışındaki ülkelerde, özellikle ABD ve AB'de işleyebilir. Bu aktarımlar, ilgili sağlayıcıların standart sözleşme hükümleri gibi hukuki güvencelerine ve yürürlükteki mevzuata dayanır.</p>
+        <p class="en">Our providers (cloud infrastructure, AI, Apple, Google and others) may process information in countries outside Türkiye, notably the US and the EU. These transfers rely on the providers' legal safeguards, such as standard contractual clauses, and on applicable law.</p>
+      </section>
+
+      <section id="s14">
+        <h2><span class="tr">Güncellemeler ve iletişim</span><span class="en">Updates and contact</span></h2>
+        <p class="tr">Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikleri uygulamada veya bu sayfada duyururuz; güncel sürüm her zaman bu adrestedir ve yukarıdaki tarihle gösterilir. Değişiklikten sonra uygulamayı kullanmaya devam etmeniz, güncel politikayı kabul ettiğiniz anlamına gelir.</p>
+        <p class="en">We may update this policy from time to time. Important changes will be announced in the app or on this page; the current version is always at this address, shown with the date above. Continuing to use the app after a change means you accept the updated policy.</p>
+        <p><strong class="tr">Soru ve talepleriniz için:</strong><strong class="en">For questions and requests:</strong> <a href="mailto:emoraaiapp@gmail.com">emoraaiapp@gmail.com</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="f"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 10c-9.4 0-17 6.7-17 15 0 4.6 2.3 8.7 6 11.5L13 47l9.4-4.6c1.1.2 2.3.3 3.6.3 9.4 0 17-6.7 17-15s-7.6-17.7-17-17.7Z"/><path d="M46 24.6c7 .9 12 6 12 12.4 0 3.6-1.7 6.8-4.5 9L55 55l-7.5-3.7c-.9.2-1.8.3-2.8.3-4.4 0-8.3-1.8-10.7-4.6"/></svg><span>© 2026 Emora AI</span></div>
+    <nav><a href="support.html"><span class="tr">Destek</span><span class="en">Support</span></a><a href="mailto:emoraaiapp@gmail.com">emoraaiapp@gmail.com</a></nav>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var html = document.documentElement;
+  var stored = null;
+  try { stored = localStorage.getItem('emora-privacy-lang'); } catch (e) {}
+  var fromUrl = (location.search.match(/[?&]lang=(tr|en)/) || [])[1];
+  var lang = fromUrl || stored || ((navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+  function apply(l) {
+    html.setAttribute('data-lang', l); html.lang = l;
+    document.getElementById('btn-tr').setAttribute('aria-pressed', l === 'tr');
+    document.getElementById('btn-en').setAttribute('aria-pressed', l === 'en');
+    try { localStorage.setItem('emora-privacy-lang', l); } catch (e) {}
+    document.title = l === 'tr' ? 'Emora AI — Gizlilik Politikası' : 'Emora AI — Privacy Policy';
+  }
+  document.getElementById('btn-tr').addEventListener('click', function () { apply('tr'); });
+  document.getElementById('btn-en').addEventListener('click', function () { apply('en'); });
+  apply(lang);
+  // Tablo hücrelerine başlık etiketi (telefonda alt alta gösterim için)
+  document.querySelectorAll('table').forEach(function (t) {
+    var heads = Array.prototype.map.call(t.querySelectorAll('tr:first-child th'), function (h) { return h.textContent; });
+    t.querySelectorAll('tr').forEach(function (r) {
+      Array.prototype.forEach.call(r.querySelectorAll('td'), function (c, i) { c.setAttribute('data-label', heads[i] || ''); });
+    });
+  });
+  // İçindekiler: geniş ekranda açık, dar ekranda kapalı; dar ekranda bağlantıya basınca kapanır
+  var tocd = document.getElementById('tocd');
+  function syncToc() { if (tocd) tocd.open = window.innerWidth > 940; }
+  syncToc();
+  var lastNarrow = window.innerWidth <= 940;
+  window.addEventListener('resize', function () {
+    var narrow = window.innerWidth <= 940;
+    if (narrow !== lastNarrow) { lastNarrow = narrow; syncToc(); }
+  });
+  document.querySelectorAll('#toc a').forEach(function (a) {
+    a.addEventListener('click', function () { if (window.innerWidth <= 940 && tocd) tocd.open = false; });
+  });
+  // Kartlar görünürken yumuşakça belirir
+  var rev = document.querySelectorAll('.fact, main section, footer');
+  rev.forEach(function (el) { el.classList.add('reveal'); });
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    rev.forEach(function (el) { ro.observe(el); });
+  } else { rev.forEach(function (el) { el.classList.add('in'); }); }
+  // Güvenlik: animasyon herhangi bir nedenle çalışmazsa içerik asla gizli kalmasın
+  setTimeout(function () { rev.forEach(function (el) { el.classList.add('in'); }); }, 2500);
+  // İçindekiler: okunan bölümü vurgula
+  var links = {};
+  document.querySelectorAll('#toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) {
+          Object.keys(links).forEach(function (k) { links[k].classList.remove('on'); });
+          if (links[e.target.id]) links[e.target.id].classList.add('on');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    document.querySelectorAll('main section').forEach(function (sec) { io.observe(sec); });
+  }
+})();
+</script>
+</body>
+</html>
